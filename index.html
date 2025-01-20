@@ -1,11 +1,98 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="icon" href="./assets/MLogo.png" type="image/png">
+    <meta name="description" content="BLAH BLAH BLAH">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+
+    <style>
+   
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 50%;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
 </head>
 <body>
+
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./assets/MLogo.png" alt="Logo" class="logo-img">
+                      </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+
+        <div class="row hero-section">
+            <div class="col-md-6">
+                <div class="p-5">
+                    <h1 class="fs-4xl">Learn With us</h1>
+                    <h1 class="fs-6xl fw-bold">[Website Name]</h1>
+                    <p class="mb-5 fs-2xl fw-normal">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Fuga quisquam nesciunt tempore minus! Eligendi est laudantium velit nesciunt ullam, tenetu.
+                    </p>
+                    <button class="" onclick="window.location.href='./pages/topics.html';">Get Started</button>
+                </div>
+            </div>
+            
+            <div class="col-md-6 d-flex justify-content-start align-items-center">
+                <img src="./assets/graphics.png" alt="Hero Image" class="img-fluid hero-img">
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Website Name]. All rights reserved.</p>
+        </div>
+    </footer>
     
+
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JS and dependencies (Popper and jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
