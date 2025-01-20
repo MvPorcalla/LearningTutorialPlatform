@@ -154,6 +154,16 @@
     width: 100%;
 }
  
+.logo-img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
   
   /* ===================================================== Hero LANDING PAGE ===================================================== */
 
