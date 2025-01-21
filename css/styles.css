@@ -100,23 +100,6 @@
     text-align: center;
   }
 
-    
-  button {
-    background: #ffa500;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
-    margin: 10px 5px;
-    transition: 0.3s;
-  }
-  
-  button:hover {
-    background: #ff7f00;
-  }
-  
   
 /* ======================================================================================================================== */
 
@@ -164,6 +147,27 @@
 .logo-img:hover {
     transform: scale(1.1);
 }
+
+button {
+  background: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  background: #ff7f00;
+  transform: scale(1.05);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+
   
   /* ===================================================== Hero LANDING PAGE ===================================================== */
 
@@ -191,10 +195,10 @@
 
 .card {
     flex: 0 0 auto;
-    width: 15rem;  /* Square size */
+    width: 100%;  /* Square size */
     height: 15rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
     text-align: center;
     background: #fff;
     overflow: hidden;
@@ -202,6 +206,7 @@
 }
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
 }
 .card img {
     width: 100%;

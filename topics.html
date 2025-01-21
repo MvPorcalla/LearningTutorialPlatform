@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="icon" href="./../assets/MLogo.png" type="image/png">
+    <title>Topic Page</title>
+    <link rel="icon" href="./assets/MLogo.png" type="image/png">
     <meta name="description" content="BLAH BLAH BLAH">
     
     <!-- Bootstrap CSS -->
@@ -13,7 +13,7 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     
 </head>
@@ -23,16 +23,18 @@
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="./../index.html">
-                        <img src="./../assets/MLogo.png" alt="Logo" class="logo-img">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./assets/MLogo.png" alt="Logo" class="logo-img">
                       </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
-                            
                             <li class="nav-item">
+                                <a class="nav-link" href="./topics.html">Topics</a>
+                            </li>
+                            <li class="nav-item mx-3">
                                 <a class="nav-link" href="./about.html">About</a>
                             </li>
                             <li class="nav-item">
@@ -48,7 +50,7 @@
     <main class="container-fluid">
 
         <section>
-            <div class="text-center m-5">
+            <div class="text-center m-2">
                 <h1 class="fs-6xl fw-bold">[Website Name]</h1>
                 <p>Your gateway to knowledge and learning</p>
             </div>
@@ -61,54 +63,92 @@
                 <!-- Grid Layout -->
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-md-2">
-                        <a href="addition.html" class="text-decoration-none">
+                        <a href="./pages/lesson/addition.html" class="text-decoration-none">
                             <div class="card">
-                                <img src="./../assets/SampleProject.png" class="card-img-top" alt="Addition">
+                                <img src="./assets/SampleProject.png" class="card-img-top" alt="Addition">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Addition</h5>
+                                    <h5 class="card-title text-center">Addition Lesson</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-2">
-                        <a href="subtraction.html" class="text-decoration-none">
+                        <a href="./pages/lesson/subtraction.html" class="text-decoration-none">
                             <div class="card">
-                                <img src="./../assets/SampleProject.png" class="card-img-top" alt="Subtraction">
+                                <img src="./assets/SampleProject.png" class="card-img-top" alt="Subtraction">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Subtraction</h5>
+                                    <h5 class="card-title text-center">Subtraction Lesson</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-2">
-                        <a href="multiplication.html" class="text-decoration-none">
+                        <a href="./pages/lesson/multiplication.html" class="text-decoration-none">
                             <div class="card">
-                                <img src="./../assets/SampleProject.png" class="card-img-top" alt="Multiplication">
+                                <img src="./assets/SampleProject.png" class="card-img-top" alt="Multiplication">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Multiplication</h5>
+                                    <h5 class="card-title text-center">Multiplication Lesson</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-2">
-                        <a href="division.html" class="text-decoration-none">
+                        <a href="./pages/lesson/division.html" class="text-decoration-none">
                             <div class="card">
-                                <img src="./../assets/SampleProject.png" class="card-img-top" alt="Division">
+                                <img src="./assets/SampleProject.png" class="card-img-top" alt="Division">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Division</h5>
+                                    <h5 class="card-title text-center">Division Lesson</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col-md-2">
-                        <a href="fractions.html" class="text-decoration-none">
+                        <a href="./pages/lesson/fraction.html" class="text-decoration-none">
                             <div class="card">
-                                <img src="./../assets/SampleProject.png" class="card-img-top" alt="Fractions">
+                                <img src="./assets/SampleProject.png" class="card-img-top" alt="Fractions">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Fractions</h5>
+                                    <h5 class="card-title text-center">Fractions Lesson</h5>
                                 </div>
                             </div>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-3">
+            
+                <!-- Grid Layout -->
+                <div class="row d-flex justify-content-center ">
+                    <div class="col-md-2">
+                        <button class="w-100" onclick="window.location.href='./pages/quizPage/additionquiz.html';">
+                            Addition Quiz
+                        </button>
+                    </div>
+
+                    <div class="col-md-2">
+                        <button class="w-100" onclick="window.location.href='./pages/quizPage/subtractionquiz.html';">
+                            Subtaction Quiz
+                        </button>
+                    </div>
+
+                    <div class="col-md-2">
+                        <button class="w-100" onclick="window.location.href='./pages/quizPage/multiplicationquiz.html';">
+                            Multiplication Quiz
+                        </button>
+                    </div>
+                    
+                    <div class="col-md-2">
+                        <button class="w-100" onclick="window.location.href='./pages/quizPage/divisionquiz.html';">
+                            DIvision Quiz
+                        </button>
+                    </div>
+
+                    <div class="col-md-2">
+                        <button class="w-100" onclick="window.location.href='./pages/quizPage/fractionsquiz.html';">
+                            Fraction Quiz
+                        </button>
                     </div>
                 </div>
             </div>
@@ -124,7 +164,7 @@
         </div>
     </footer>
 
-    <script src="./../js/script.js"></script>
+    <script src="./js/script.js"></script>
 
     <!-- Bootstrap JS and dependencies (Popper and jQuery) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
